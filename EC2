@@ -1,0 +1,26 @@
+Step-by-Step EC2 Setup and Python Environment Configuration
+Launch an EC2 Instance
+
+---->>>>Prepare the EC2 Instance for Python Development
+---->>>>Run the following commands sequentially:
+
+# Update and upgrade the system
+sudo apt update && sudo apt upgrade -y
+
+# Install Python and pip
+sudo apt install python3 python3-pip -y
+
+# Install virtual environment support
+sudo apt install python3-venv -y
+
+# Create a Python virtual environment
+python3 -m venv venv
+
+# Activate the virtual environment
+source venv/bin/activate
+
+# Create a directory for your Python application
+mkdir myapp
+cd myapp
+
+----->>>>>>Your EC2 Instance is Ready!---
